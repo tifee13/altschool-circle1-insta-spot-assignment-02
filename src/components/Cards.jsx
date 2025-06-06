@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { cardsData } from '../../insta-spot-react/src/data/CardsData';
+import { cardsData } from '../data/CardsData';
 import Card from './Card';
 
 const Cards = ({ extraCards = [], likes = {}, onLikeToggle }) => {

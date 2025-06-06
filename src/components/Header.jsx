@@ -15,13 +15,14 @@ const Header = ({ profile, onEdit, onNewPost }) => {
 
       <div className="banner" aria-label="User profile banner">
         <div className="avatar-section" role="group" aria-label="User information">
-          <img
-            className="avatar-img"
-            id="profileImage"
-            src="./assets/images/avatar.png"
-            alt="Profile image of Bessie Coleman"
-            loading="lazy"
-          />
+        <img
+          className="avatar-img"
+          id="profileImage"
+          src={profile.image || './assets/images/avatar.png'}
+          alt={`Profile image of ${profile.name || 'user'}`}
+          loading="lazy"
+        />
+
           <div className="properties">
             <div className="details">
               <h3 className="name" id="profileName"> 
